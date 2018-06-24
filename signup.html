@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Sheets</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="icons/favicon.ico"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+</head>
+<body>
+
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <form class="login100-form validate-form" method="post">
+					<span class="login100-form-title p-b-26">
+						Signup
+					</span>
+                <span class="login100-form-title p-b-48">
+						<i class="zmdi zmdi-font"></i>
+					</span>
+                <!--form id="identicalForm" method="post">
+                    -->
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" name="name">
+                    <span class="focus-input100" data-placeholder="Name"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Incorrect Email">
+                    <input class="input100" type="email" name="email">
+                    <span class="focus-input100" data-placeholder="Email"></span>
+                </div>
+
+
+                <div class="wrap-input100 validate-input" data-validate="Incorrect Username">
+                    <input class="input100" type="text" name="username" required>
+                    <span class="focus-input100" data-placeholder="Username"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Incorrect Passsword">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+                    <input class="input100" type="password" name="pass" required>
+                    <span class="focus-input100" data-placeholder="Password"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Password do not match!">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+                    <input class="input100" type="password" name="confPass" required>
+                    <span class="focus-input100" data-placeholder="Confirm Password"></span>
+                </div>
+
+
+                <div>
+                    <label> <input type='radio' name='usertype' value='student' required> Student</label>
+                    <label> <input style="margin-left: 20px" type='radio' name='usertype' value='instructor' required>
+                        Instructor </label>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 20px ;margin-top: 10px">
+                    <label for="section">Select Section</label>
+                    <select id="section" name="section">
+                        <option value="CS-1">CS-1</option>
+                        <option value="CS-2">CS-2</option>
+                        <option value="CS-3">CS-3</option>
+                        <option value="CS-4">CS-4</option>
+                    </select>
+                </div>
+
+
+                <!--                <div class="g-recaptcha" data-sitekey="6LfoMFUUAAAAAMKfbM5xYJjzB6GWwSuTBeQewQ_F"></div>-->
+                <div class="container-login100-form-btn">
+                    <div class="wrap-login100-form-btn">
+                        <div class="login100-form-bgbtn"></div>
+                        <button class="login100-form-btn" type="submit">
+                            Sign Me Up!
+                        </button>
+                    </div>
+                </div>
+                <!--/form-->
+
+                <div class="text-center p-t-10">
+						<span class="txt1">
+							Already have an account?
+						</span>
+
+                    <a class="txt2" href="login.html">
+                        Log In
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!--===============================================================================================-->
+<!--<script>-->
+    <!--$(document).ready(function () {-->
+        <!--$('#identicalForm').formValidation({-->
+            <!--framework: 'bootstrap',-->
+            <!--icon: {-->
+                <!--valid: 'glyphicon glyphicon-ok',-->
+                <!--invalid: 'glyphicon glyphicon-remove',-->
+                <!--validating: 'glyphicon glyphicon-refresh'-->
+            <!--},-->
+            <!--fields: {-->
+                <!--confirmPassword: {-->
+                    <!--validators: {-->
+                        <!--identical: {-->
+                            <!--field: 'password',-->
+                            <!--message: 'Passwords do not match!'-->
+                        <!--}-->
+                    <!--}-->
+                <!--}-->
+            <!--}-->
+        <!--});-->
+    <!--});-->
+<!--</script>-->
+
+
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
